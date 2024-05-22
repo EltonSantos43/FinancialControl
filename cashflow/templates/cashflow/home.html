@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Bem-vindo ao Financial Control</h1>
+      <p class="lead">Seu sistema de controle de fluxo de caixa para barbearias.</p>
+      <hr class="my-4">
+      <p>Gerencie suas transações financeiras, adicione produtos e visualize relatórios detalhados.</p>
+      <a class="btn btn-primary btn-lg" href="{% url 'adicionar_produto' %}" role="button">Adicionar Produto</a>
+      <a class="btn btn-secondary btn-lg" href="{% url 'adicionar_transacao' %}" role="button">Adicionar Transação</a>
+      <a class="btn btn-success btn-lg" href="{% url 'relatorios' %}" role="button">Ver Relatórios</a>
+    </div>
+  </div>
+{% endblock %}
